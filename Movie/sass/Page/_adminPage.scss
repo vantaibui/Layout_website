@@ -1,0 +1,92 @@
+.admin {
+    .admin__Nav {
+        .nav {
+            .nav-link {
+                @include text($color-blue-2, $fs-4, $fw-regular);
+                background-color: $color-white-0;
+                &:hover {
+                    background-color: $color-blue-4;
+                }
+                &.active {
+                    color: $color-black-3;
+                }
+            }
+        }
+    }
+    .admin__Content {
+        .content_header {
+            background-color: $color-gray-5;
+            padding: 30px;
+            margin-bottom: 30px;
+            .header_left {
+                .left_logo {
+                    &:hover {
+                        text-decoration: none;
+                    }
+                    img {
+                        // box-shadow: 0 0.46875rem 2.1875rem rgba(0, 0, 0, 0.03), 0 0.9375rem 1.40625rem rgba(0, 0, 0, 0.03), 0 0.25rem 0.53125rem rgba(0, 0, 0, 0.05), 0 0.125rem 0.1875rem rgba(0, 0, 0, 0.03);
+                        width: 60px;
+                        height: 60px;
+                        margin-right: 20px;
+                    }
+                    span {
+                        @include text($color-black-5, $fs-5, $fw-regular);
+                    }
+                }
+            }
+            .header_right {
+                text-align: right;
+                .btnAdd {
+                    @include text($color-white-0, $fs-2, $fw-regular);
+                }
+            }
+        }
+        .content_list {
+            border: 1px solid black;
+            .list {
+                // padding: 12px 20px;
+                .list_header {
+                    padding: 12px 20px;
+                    h2 {
+                        margin: 0;
+                        font-size: 18px;
+                    }
+                }
+                .list_table {
+                    .table {
+                        margin: 0;
+                        tr {
+                            &:hover {
+                                background-color: rgba($color: $color-blue-4, $alpha: 0.2);
+                            }
+                            td {
+                                padding: 0.55rem;
+                                border: none;
+                            }
+                        }
+                        .deleteMovie {
+                            &:focus {
+                                outline: none;
+                            }
+                            padding: 4px;
+                            border-radius: 4px;
+                            border: 1px solid $color-white-0;
+                            background-color: $color-red-4;
+                            @include text($color-white-0, $fs-2, $fw-regular);
+                        }
+                        .updateMovie {
+                            &:focus {
+                                outline: none;
+                            }
+                            padding: 4px;
+                            border-radius: 4px;
+                            border: 1px solid $color-white-0;
+                            background-color: $color-green-3;
+                            @include text($color-white-0, $fs-2, $fw-regular);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

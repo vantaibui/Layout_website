@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bùi Văn Tài</title>
+    <!--[if lt IE 9]>
+      <script src="/js/html5shiv.js"></script>
+    <![endif]-->
+    <!-- bootstrap 4 -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+    <!-- main -->
+    <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body>
+    <!-- header -->
+    <header class="header">
+        <nav class="navbar navbar-expand-sm">
+            <div class="header-left col-xl-3 col-lg-2 col-md-2 col-sm-6 col-6">
+                <a class="navbar-brand" href="index.html"><img src="./img/web-logo.png" alt="logo" /></a>
+            </div>
+            <button class="navbar-toggler hidden-sm-up col-6" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <img src="./img/button-header.png" alt="button-header" />
+        </button>
+            <div class="header-center col-xl-6 col-lg-6 col-md-7">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Lịch chiếu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Cụm rạp</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Tin Tức</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Ứng dụng</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="header-right col-xl-3 col-lg-4 col-md-5 col-sm-6 px-0">
+                <div class="avatar">
+                    <a href=""><img src="./img/avatar.png" alt="avatar" /><span>Đăng Nhập</span
+              ></a
+            >
+          </div>
+          <div class="location">
+            <img src="./img/location-header.png" alt="" />
+            <select name="location" id="location">
+              <option>Hồ Chí Minh</option>
+              <option value="HaNoi">Hà Nội</option>
+              <option value="DaNang">Đà Nẵng</option>
+              <option value="HaiPhong">Hải Phòng</option>
+              <option value="BienHoa">Biên Hòa</option>
+              <option value="NhaTrang">Nha Trang</option>
+              <option value="BinhDuong">Bình Dương</option>
+              <option value="PhanThiet">Phan Thiết</option>
+            </select>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- introduce movie -->
+    <section class="introduceMovie">
+      <div class="introduceMovie__content">
+        <div class="backgroundImg">
+          <img
+            src="img/sacdepdoitra-background.jpg"
+            alt="sacdepdoitra-background"
+          />
+        </div>
+        <div class="backgroundLinear"></div>
+        <div class="row detailMovie detailWidth">
+          <div class="col-sm-3 imgMovie">
+            <img src="img/sac-dep-doi-tra.jpg" alt="sac-dep-doi-tra" />
+            <div class="moviePlay">
+              <a href="#" data-toggle="modal" data-target="#moviePlay">
+                <img src="img/play-video.png" alt="play" />
+              </a>
+            </div>
+          </div>
+          <div class="col-sm-6 inforMovie">
+            <p>14.02.2020</p>
+            <p>
+              <span class="span--red">C16</span>
+                        <span>Sắc Đẹp Dối Trá - The Drama Queen </span>
+                        </p>
+                        <p>91 phút - 0 IMDb - 2D/Digital</p>
+                </div>
+                <div class="col-sm-3 evaluateMovie">
+                    <div class="percentRated">
+                        <svg>
+                <circle cx="70" cy="70" r="70"></circle>
+                <circle cx="70" cy="70" r="70"></circle>
+              </svg>
+                        <div class="number">
+                            <span>7.3</span>
+                        </div>
+                    </div>
+                    <div class="starRated">
+                        <div class="star">
+                            <img src="img/star1.png" alt="star1" />
+                            <img src="img/star1.png" alt="star1" />
+                            <img src="img/star1.png" alt="star1" />
+                            <img src="img/star1.2.png" alt="star1.2" />
+                        </div>
+                        <!-- <div class="numberOfReviews"> -->
+                        <span>270 người đánh giá</span>
+                        <!-- </div> -->
+                    </div>
+                </div>
+            </div>
+            </div>
+            </section>
+            <!-- information movie -->
+            <section class="informationMovie">
+                <div class="informationMovie__content detailWidth">
+                    <ul class="nav justify-content-center" id="inforMovieTab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="showTimes-tab" data-toggle="tab" href="#showTimes" role="tab" aria-controls="showTimes" aria-selected="true">Lịch chiếu</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              id="info-tab"
+              data-toggle="tab"
+              href="#info"
+              role="tab"
+              aria-controls="info"
+              aria-selected="true"
+              >Thông Tin</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              id="evaluate-tab"
+              data-toggle="tab"
+              href="#evaluate"
+              role="tab"
+              aria-controls="evaluate"
+              aria-selected="false"
+              >Đánh Giá</a
+            >
+          </li>
+        </ul>
+        <div class="tab-content" id="inforMovieTabContent">
+          <!-- lịch chiếu -->
+          <div
+            class="tab-pane fade show active"
+            id="showTimes"
+            role="tabpanel"
+            aria-labelledby="showTimes-tab"
+          >
+            <div class="row">
+              <div class="col-sm-4 col-12 listTheater">
+                <div
+                  class="nav flex-column nav-pills"
+                  id="v-pills-tab"
+                  role="tablist"
+                  aria-orientation="vertical"
+                >
+                  <!-- cgv -->
+                  <a
+                    class="nav-link active"
+                    id="v-pills-cgv-tab"
+                    data-toggle="pill"
+                    href="#v-pills-cgv"
+                    role="tab"
+                    aria-controls="v-pills-cgv"
+                    aria-selected="true"
+                  >
+                    <div class="row infoTheater">
+                      <div class="col-4 imgTheater">
+                        <img src="img/cgv.png" alt="cgv" />
+                      </div>
+                      <div class="col-8 desTheater">
+                        <p>CGV</p>
+                        <p>
+                          <img src="img/ct.png" alt="ct" />
+                          <span>x3 vé CGV 79k/vé</span>
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+                            <!-- bhd -->
+                            <a class="nav-link" id="v-pills-bhd-tab" data-toggle="pill" href="#v-pills-bhd" role="tab" aria-controls="v-pills-bhd" aria-selected="false">
+                                <div class="row infoTheater">
+                                    <div class="col-4 p-0 imgTheater">
+                                        <img src="img/bhd.png" alt="cgv" />
+                                    </div>
+                                    <div class="col-8 desTheater">
+                                        <p>BHD</p>
+                                        <p>
+                                            <img src="img/ct.png" alt="ct" />
+                                            <span>x3 vé BHD 59k/vé</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                            <!-- galaxy -->
+                            <a class="nav-link" id="v-pills-galaxy-tab" data-toggle="pill" href="#v-pills-galaxy" role="tab" aria-controls="v-pills-galaxy" aria-selected="false">
+                                <div class="row infoTheater">
+                                    <div class="col-4 p-0 imgTheater">
+                                        <img src="img/galaxycine.png" alt="cgv" />
+                                    </div>
+                                    <div class="col-8 desTheater desCustomer">
+                                        <p>Galaxy Cinema</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <!-- cine -->
+                            <a class="nav-link" id="v-pills-cineStar-tab" data-toggle="pill" href="#v-pills-cineStar" role="tab" aria-controls="v-pills-cineStar" aria-selected="false">
+                                <div class="row infoTheater">
+                                    <div class="col-4 p-0 imgTheater">
+                                        <img src="img/cinestar.png" alt="cgv" />
+                                    </div>
+                                    <div class="col-8 desTheater desCustomer">
+                                        <p>CineStar</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <!-- ddc -->
+                            <a class="nav-link" id="v-pills-DDC-tab" data-toggle="pill" href="#v-pills-DDC" role="tab" aria-controls="v-pills-DDC" aria-selected="false">
+                                <div class="row infoTheater">
+                                    <div class="col-4 p-0 imgTheater">
+                                        <img src="img/dongdacinema.png" alt="cgv" />
+                                    </div>
+                                    <div class="col-8 desTheater desCustomer">
+                                        <p>DDC - Đống Đa</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <!-- mega -->
+                            <a class="nav-link" id="v-pills-megaGS-tab" data-toggle="pill" href="#v-pills-megaGS" role="tab" aria-controls="v-pills-megaGS" aria-selected="false">
+                                <div class="row infoTheater">
+                                    <div class="col-4 p-0 imgTheater">
+                                        <img src="img/megags.png" alt="cgv" />
+                                    </div>
+                                    <div class="col-8 desTheater desCustomer">
+                                        <p>Mega GS</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <!-- dcine -->
+                            <a class="nav-link" id="v-pills-dcine-tab" data-toggle="pill" href="#v-pills-dcine" role="tab" aria-controls="v-pills-dcine" aria-selected="false">
+                                <div class="row infoTheater">
+                                    <div class="col-4 p-0 imgTheater">
+                                        <img src="img/dcine.png" alt="cgv" />
+                                    </div>
+                                    <div class="col-8 desTheater desCustomer">
+                                        <p>DCINE Cinemas</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <!-- lotte -->
+                            <a class="nav-link" id="v-pills-lotte-tab" data-toggle="pill" href="#v-pills-lotte" role="tab" aria-controls="v-pills-lotte" aria-selected="false">
+                                <div class="row infoTheater">
+                                    <div class="col-4 p-0 imgTheater">
+                                        <img src="img/lottecinema.png" alt="cgv" />
+                                    </div>
+                                    <div class="col-8 desTheater desCustomer">
+                                        <p>Lotte Cinema</p>
+                                    </div>
+                                </div>
+                            </a>
+                </div>
+                </div>
+                <div class="col-sm-8 col-12 contentST">
+                    <div class="tab-content m-0 contentST__content" id="v-pills-tabContent">
+                        <!-- CGV -->
+                        <div class="tab-pane fade show active" id="v-pills-cgv" role="tabpanel" aria-labelledby="v-pills-cgv-tab">
+                            <!-- 1 -->
+                            <div class="showTimesInfo m-0">
+                                <div class="row theaterInfo">
+                                    <img class="col-sm-1 imgTheater" src="img/cgv-saigonres-nguyen-xi.jpg" alt="cgv" />
+                                    <div class="col-sm-11 infoContent">
+                                        <p>
+                                            <span>CGV</span>
+                                            <span> - Crescent Mall</span>
+                                        </p>
+                                        <p>
+                                            Lầu 5, Crescent Mall Đại lộ Nguyễn Văn Linh, Phú Mỹ Hưng ...
+                                            <span>[Bản đồ]</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="movieSessions">
+                                    <div class="movieFormat">
+                                        <p>2D Digital | Cine & Living Room</p>
+                                    </div>
+                                    <div class="row listTime m-0 p-0">
+                                        <a class="col-sm-3 timeItem" href="booking.html">
+                                            <span>10 : 15</span>
+                                            <span> ~ 12 : 46</span>
+                                        </a>
+                                        <a class="col-sm-3 timeItem" href="booking.html">
+                                            <span>10 : 15</span>
+                                            <span> ~ 12 : 46</span>
+                                        </a>
+                                        <a class="col-sm-3 timeItem" href="booking.html">
+                                            <span>10 : 15</span>
+                                            <span> ~ 12 : 46</span>
+                                        </a>
+                                        <a class="col-sm-3 timeItem" href="booking.html">
+                                            <span>10 : 15</span>
+                                            <span> ~ 12 : 46</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- BHD -->
+                        <div class="tab-pane fade" id="v-pills-bhd" role="tabpanel" aria-labelledby="v-pills-bhd-tab">
+                            bhd
+                        </div>
+                        <!-- GALAXY -->
+                        <div class="tab-pane fade" id="v-pills-galaxy" role="tabpanel" aria-labelledby="v-pills-galaxy-tab">
+                            galaxy
+                        </div>
+                        <!-- CINE -->
+                        <div class="tab-pane fade" id="v-pills-cineStar" role="tabpanel" aria-labelledby="v-pills-cineStar-tab">
+                            cine
+                        </div>
+                        <!-- DDC -->
+                        <div class="tab-pane fade" id="v-pills-DDC" role="tabpanel" aria-labelledby="v-pills-DDC-tab">
+                            ddc
+                        </div>
+                        <!-- MEGA -->
+                        <div class="tab-pane fade" id="v-pills-megaGS" role="tabpanel" aria-labelledby="v-pills-megaGS-tab">
+                            mega
+                        </div>
+                        <!-- DCINE -->
+                        <div class="tab-pane fade" id="v-pills-dcine" role="tabpanel" aria-labelledby="v-pills-dcine-tab">
+                            dcine
+                        </div>
+                        <!-- LOTTE -->
+                        <div class="tab-pane fade" id="v-pills-lotte" role="tabpanel" aria-labelledby="v-pills-lotte-tab">
+                            lotte
+                        </div>
+                    </div>
+                </div>
+                </div>
+                </div>
+                <!-- Thông tin phim -->
+                <div class="tab-pane fade" id="info" role="tabpanel" aria-labelledby="info-tab">
+                    <div class="row inforTop">
+                        <div class="col-md-6 infor-left">
+                            <div class="row left__item">
+                                <p class="col-sm-4">Ngày phát hành</p>
+                                <p class="col-sm-6">14.02.2020</p>
+                            </div>
+                            <div class="row left__item">
+                                <p class="col-sm-4">Đạo diễn</p>
+                                <p class="col-sm-6">Kay Nguyễn</p>
+                            </div>
+                            <div class="row left__item">
+                                <p class="col-sm-4">Diễn viên</p>
+                                <p class="col-sm-6">Hương Giang, Puka</p>
+                            </div>
+                            <div class="row left__item">
+                                <p class="col-sm-4">Thể Loại</p>
+                                <p class="col-sm-6">hài hước, hành động</p>
+                            </div>
+                            <div class="row left__item">
+                                <p class="col-sm-4">Định dạng</p>
+                                <p class="col-sm-6">2D/Digital</p>
+                            </div>
+                            <div class="row left__item">
+                                <p class="col-sm-4">Quốc Gia SX</p>
+                                <p class="col-sm-6">Việt Nam</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 infor-right">
+                            <div class="right__item">
+                                <div class="itemTitle">
+                                    <p>Nội dung</p>
+                                </div>
+                                <div class="itemContent">
+                                    <p>
+                                        Phim xoay quanh câu chuyện cuộc đời của Dương - một anh chàng cascadeur nhưng lại mang trong mình khát khao trở thành phụ nữ. Một ngày nọ, ước mơ ấy bỗng phải trở thành hiện thực ngay lập tức khi Dương tình cờ chứng kiến một vụ giết người và buộc phải
+                                        thay đổi nhân dạng để lẩn trốn. Sau cuộc phẫu thuật chuyển giới, cha của Dương đột ngột lâm bệnh nặng, khiến cô phải bất đắc dĩ tham gia vào một cuộc thi Hoa hậu để có đủ tiền lo viện phí cho cha. Kể từ đó, rất
+                                        nhiều tình huống bi hài và nguy hiểm không ngừng xảy đến với cô. Cùng đoán xem Dương sẽ phải trải qua những gian truân như thế nào?
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="inforBottom">
+                        <div class="bottomTitle">
+                            <p>Tin liên quan</p>
+                        </div>
+                        <div class="bottomContent">
+                            <a href="">
+                                <div class="bottomImg">
+                                    <img src="img/review-sac-dep-doi-trajpg.jpg" alt="review-sac-dep-doi-tra" />
+                                </div>
+                                <div class="bottomReview">
+                                    <p>
+                                        [Review] Sắc Đẹp Dối Trá - Hương Giang kể chuyện đời mình qua phim ảnh
+                                    </p>
+                                </div>
+                            </a>
+                            <div class="bottom__icon">
+                                <div class="like">
+                                    <img src="img/like.png" alt="like" />
+                                    <span>0</span>
+                                </div>
+                                <div class="comment">
+                                    <a href="">
+                                        <img src="img/comment.png" alt="comment" />
+                                        <span>0</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Đánh giá -->
+                <div class="tab-pane fade" id="evaluate" role="tabpanel" aria-labelledby="evaluate-tab">
+                    <div class="listComment">
+                        <div class="commentItem">
+                            <div class="commentReviewer">
+                                <div class="infoReviewer">
+                                    <div class="reviewer col-sm-6">
+                                        <img src="img/reviewer.png" alt="reviewer" />
+                                        <span>
+                        <p>Hachivas Le</p>
+                        <p>1 tháng trước</p>
+                      </span>
+                                    </div>
+                                    <div class="numberOfReviews col-sm-6">
+                                        <div class="rate">
+                                            <p>7</p>
+                                            <p>
+                                                <img src="img/star1.png" alt="star1" />
+                                                <img src="img/star1.png" alt="star1" />
+                                                <img src="img/star1.png" alt="star1" />
+                                                <img src="img/star1.2.png" alt="star1.2" />
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="commentContent">
+                                    <p>
+                                        Dù đã đọc nhiều bình luận, nhận xét không hay về bộ phim nhưng vẫn quyết định đi coi vì ủng hộ chị đẹp Hương Giang. Phim mang tính hài hước, giải trí cao nhờ sự duyên dáng của Phát La và Puka. Về phần diễn xuất củq chị Giang thì mình thấy chưa thật sự
+                                        tốt nhưng ổn cho lần đầu đóng
+                                    </p>
+                                    <p>Xem thêm</p>
+                                </div>
+                            </div>
+                            <div class="likes">
+                                <img src="img/like.png" alt="like" />
+                                <span><strong>0</strong> Thích</span>
+                            </div>
+                        </div>
+                        <div class="commentItem">
+                            <div class="commentReviewer">
+                                <div class="infoReviewer">
+                                    <div class="reviewer col-sm-6">
+                                        <img src="img/reviewer.png" alt="reviewer" />
+                                        <span>
+                        <p>Anh Yêu</p>
+                        <p>1 tháng trước</p>
+                      </span>
+                                    </div>
+                                    <div class="numberOfReviews col-sm-6">
+                                        <div class="rate">
+                                            <p>8</p>
+                                            <p>
+                                                <img src="img/star1.png" alt="star1" />
+                                                <img src="img/star1.png" alt="star1" />
+                                                <img src="img/star1.png" alt="star1" />
+                                                <img src="img/star1.png" alt="star1" />
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="commentContent">
+                                    <p>
+                                        Phim xem được nha mọi người. Nói về cuộc đời thế giới thứ ba
+                                    </p>
+                                    <p class="d-none">Xem thêm</p>
+                                </div>
+                            </div>
+                            <div class="likes">
+                                <img src="img/like.png" alt="like" />
+                                <span><strong>0</strong> Thích</span>
+                            </div>
+                        </div>
+                        <div class="commentItem">
+                            <div class="commentReviewer">
+                                <div class="infoReviewer">
+                                    <div class="reviewer col-sm-6">
+                                        <img src="img/reviewer.png" alt="reviewer" />
+                                        <span>
+                        <p>Sumika Ichigo</p>
+                        <p>1 tháng trước</p>
+                      </span>
+                                    </div>
+                                    <div class="numberOfReviews col-sm-6">
+                                        <div class="rate">
+                                            <p>8</p>
+                                            <p>
+                                                <img src="img/star1.png" alt="star1" />
+                                                <img src="img/star1.png" alt="star1" />
+                                                <img src="img/star1.png" alt="star1" />
+                                                <img src="img/star1.png" alt="star1" />
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="commentContent">
+                                    <p>
+                                        Mình thấy phim cũng khá đấy chứ! Chị Hương Giang công nhận đẹp và sức hút thật. Cốt truyện đời thường, đơn giản, được cái thích mấy miếng hài trong phim. Xem giải trí cũng ổn. 😄😄😄
+                                    </p>
+                                    <p class="d-none">Xem thêm</p>
+                                </div>
+                            </div>
+                            <div class="likes">
+                                <img src="img/like.png" alt="like" />
+                                <span><strong>0</strong> Thích</span>
+                            </div>
+                        </div>
+                        <div class="commentItem">
+                            <div class="commentReviewer">
+                                <div class="infoReviewer">
+                                    <div class="reviewer col-sm-6">
+                                        <img src="img/reviewer.png" alt="reviewer" />
+                                        <span>
+                        <p>Binh</p>
+                        <p>1 tháng trước</p>
+                      </span>
+                                    </div>
+                                    <div class="numberOfReviews col-sm-6">
+                                        <div class="rate">
+                                            <p>7</p>
+                                            <p>
+                                                <img src="img/star1.png" alt="star1" />
+                                                <img src="img/star1.png" alt="star1" />
+                                                <img src="img/star1.png" alt="star1" />
+                                                <img src="img/star1.2.png" alt="star1.2" />
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="commentContent">
+                                    <p>
+                                        Phim coi tạm dc
+                                    </p>
+                                    <p class="d-none">Xem thêm</p>
+                                </div>
+                            </div>
+                            <div class="likes">
+                                <img src="img/like.png" alt="like" />
+                                <span><strong>0</strong> Thích</span>
+                            </div>
+                        </div>
+                        <div class="commentItem">
+                            <div class="commentReviewer">
+                                <div class="infoReviewer">
+                                    <div class="reviewer col-sm-6">
+                                        <img src="img/reviewer.png" alt="reviewer" />
+                                        <span>
+                        <p>
+                          Lê Chấn Thiên
+                          <img src="img/movieTicket.png" alt="movieTicket" />
+                        </p>
+                        <p>1 tháng trước</p>
+                      </span>
+                                    </div>
+                                    <div class="numberOfReviews col-sm-6">
+                                        <div class="rate">
+                                            <p>1</p>
+                                            <p>
+                                                <img src="img/star1.png" alt="star1" />
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="commentContent">
+                                    <p>
+                                        phim này xem chỉ phí tiền, khuyên các bạn đừng xem. quá dở lại còn kết thúc mở
+                                    </p>
+                                    <p class="d-none">Xem thêm</p>
+                                </div>
+                            </div>
+                            <div class="likes">
+                                <img src="img/like.png" alt="like" />
+                                <span><strong>0</strong> Thích</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="newsButton d-flex justify-content-center">
+                        <button class="btn btn--white">Xem thêm</button>
+                    </div>
+                </div>
+                </div>
+                </div>
+            </section>
+            <!-- footer -->
+            <footer class="footer">
+                <div class="footer__content">
+                    <div class="row footer-top">
+                        <div class="col-lg-4 col-sm-6 top-left">
+                            <p>TIX</p>
+                            <div class="row">
+                                <div class="col-lg-6 left-item">
+                                    <a href="">FAQ</a>
+                                    <a href="">Brand Guidelines</a>
+                                </div>
+                                <div class="col-lg-6 left-item">
+                                    <a href="">Thỏa thuận sử dụng</a>
+                                    <a href="">Chính sách bảo mật</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 top-center">
+                            <p>ĐỐI TÁC</p>
+                            <div class="companyItem">
+                                <a href=""><img src="img/cgv.png" alt="cgv" /></a>
+                                <a href=""><img src="img/bhd.png" alt="bhd" /></a>
+                                <a href=""><img src="img/galaxycine.png" alt="galaxycine" /></a>
+                                <a href=""><img src="img/cinestar.png" alt="cinestar" /></a>
+                                <a href=""><img src="img/lottecinema.png" alt="lottecinema" /></a>
+                            </div>
+                            <div class="companyItem">
+                                <a href=""><img src="img/megags.png" alt="megags" /></a>
+                                <a href=""><img src="img/beta.jpg" alt="beta" /></a>
+                                <a href=""><img src="img/dongdacinema.png" alt="dongdacinema" /></a>
+                                <a href=""><img src="img/TOUCH.png" alt="touch" /></a>
+                                <a href=""><img src="img/cinemax.jpg" alt="cinemax" /></a>
+                            </div>
+                            <div class="companyItem">
+                                <a href=""><img src="img/STARLIGHT.png" alt="starlight" /></a>
+                                <a href=""><img src="img/dcine.png" alt="dcine" /></a>
+                                <a href=""><img src="img/zalopay_icon.png" alt="zalopay_icon" /></a>
+                                <a href=""><img src="img/payoo.jpg" alt="payoo" /></a>
+                                <a href=""><img src="img/VIETTINBANK.png" alt="viettinbank" /></a>
+                            </div>
+                            <div class="companyItem">
+                                <a href=""><img src="img/AGRIBANK.png" alt="agribank" /></a>
+                                <a href=""><img src="img/VIETTINBANK.png" alt="viettinbank" /></a>
+                                <a href=""><img src="img/IVB.png" alt="ivb" /></a>
+                                <a href=""><img src="img/123go.png" alt="123go" /></a>
+                                <a href=""><img src="img/laban.png" alt="laban" /></a>
+                            </div>
+                        </div>
+                        <div class="row col-lg-4 col-sm-6 top-right">
+                            <div class="col-lg-6 right-item">
+                                <p>MOBILE APP</p>
+                                <a title="Apple App" href=""><img src="img/apple-logo.png" alt="apple-logo" /></a>
+                                <a title="Android App" href=""><img src="img/android-logo.png" alt="android-logo" /></a>
+                            </div>
+                            <div class="col-lg-6 right-item">
+                                <p>SOCIAL</p>
+                                <a title="Facebook social" href=""><img src="img/facebook-logo.png" alt="facebook-logo" /></a>
+                                <a title="Zalo social" href=""><img src="img/zalo-logo.png" alt="zalo-logo" /></a>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="footer-hr" />
+                    <div class="row footer-bottom">
+                        <div class="col-lg-1 col-md-1 col-sm-12 bottom-left">
+                            <img src="img/zion-logo.jpg" alt="zion-logo" />
+                        </div>
+                        <div class="col-lg-9 col-md-9 col-sm-12 bottom-center">
+                            <p>TIX – SẢN PHẨM CỦA CÔNG TY CỔ PHẦN ZION</p>
+                            <p>
+                                Địa chỉ: Z06 Đường số 13, Phường Tân Thuận Đông, Quận 7, Tp. Hồ Chí Minh, Việt Nam.
+                            </p>
+                            <p>
+                                Giấy chứng nhận đăng ký kinh doanh số: 0101659783, <br /> đăng ký thay đổi lần thứ 30, ngày 22 tháng 01 năm 2020 do Sở kế hoạch và đầu tư Thành phố Hồ Chí Minh cấp.
+                            </p>
+                            <p>Số Điện Thoại (Hotline): 1900 545 436</p>
+                            <p>
+                                Email: <a href="mailto:vantaibui92@gmail.com">support@tix.vn</a>
+                            </p>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-12 bottom-right">
+                            <a href="#" target="_blank"><img src="img/notification.png" alt="notification" /></a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+
+            <!-- backToTop -->
+            <a href="#" class="to-top cd-top text-replace js-cd-top"><i class="fa fa-angle-up"></i
+    ></a>
+            <!-- Modal -->
+            <div class="modal fade" id="moviePlay" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true"><img src="img/close.png" alt="" /></span>
+          </button>
+                        <iframe src="https://www.youtube.com/embed/gknlpnjWJ-M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+            <!-- bootstrap 4 -->
+            <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+            <!-- back to top -->
+            <script src="js/util.js"></script>
+            <script src="js/main.js"></script>
+</body>
+
+</html>

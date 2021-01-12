@@ -1,0 +1,1826 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bùi Văn Tài</title>
+    <!--[if lt IE 9]>
+      <script src="/js/html5shiv.js"></script>
+    <![endif]-->
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+    <!-- bootstrap 4 -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+    <!-- owl carousel -->
+    <link rel="stylesheet" href="css/owl.carousel.css" />
+    <link rel="stylesheet" href="css/owl.theme.default.css" />
+    <!-- slick slide -->
+    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="css/slick-theme.css" />
+    <!-- main css -->
+    <link rel="stylesheet" href="./css/main.css" />
+</head>
+
+<body>
+    <!-- header -->
+    <header class="header">
+        <nav class="navbar navbar-expand-sm">
+            <div class="header-left col-xl-3 col-lg-2 col-md-2 col-sm-6 col-6">
+                <a class="navbar-brand" href="index.html"><img src="./img/web-logo.png" alt="logo" /></a>
+            </div>
+            <button class="navbar-toggler hidden-sm-up col-6" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <img src="./img/button-header.png" alt="button-header" />
+        </button>
+            <div class="header-center col-xl-6 col-lg-6 col-md-7" id="navbarSupportedContent">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#showTimes">Lịch chiếu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#movieTheater">Cụm rạp</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#news">Tin Tức</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#appMobile">Ứng dụng</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="header-right col-xl-3 col-lg-4 col-md-5 col-sm-6 px-0">
+                <div class="avatar">
+                    <a href=""><img src="./img/avatar.png" alt="avatar" /><span>Đăng Nhập</span
+              ></a
+            >
+          </div>
+          <div class="location">
+            <img src="./img/location-header.png" alt="" />
+            <select name="location" id="location">
+              <option>Hồ Chí Minh</option>
+              <option value="HaNoi">Hà Nội</option>
+              <option value="DaNang">Đà Nẵng</option>
+              <option value="HaiPhong">Hải Phòng</option>
+              <option value="BienHoa">Biên Hòa</option>
+              <option value="NhaTrang">Nha Trang</option>
+              <option value="BinhDuong">Bình Dương</option>
+              <option value="PhanThiet">Phan Thiết</option>
+            </select>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Carousel tix -->
+    <section class="carouselTix">
+      <div id="carouselTix" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselTix" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselTix" data-slide-to="1"></li>
+          <li data-target="#carouselTix" data-slide-to="2"></li>
+          <li data-target="#carouselTix" data-slide-to="3"></li>
+          <li data-target="#carouselTix" data-slide-to="4"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="img/vin-dau-nhot.png"
+              class="d-block w-100 carousel-img"
+              alt="carousel"
+            />
+            <div class="carousel-play">
+              <a data-toggle="modal" data-target="#trailerMovie">
+                <img src="img/play-video.png" alt="carousel-play" />
+              </a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="img/can-ho.jpg"
+              class="d-block w-100 carousel-img"
+              alt="carousel"
+            />
+            <div class="carousel-play">
+              <a data-toggle="modal" data-target="#trailerMovie">
+                <img src="img/play-video.png" alt="carousel-play" />
+              </a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="img/onward.jpg"
+              class="d-block w-100 carousel-img"
+              alt="carousel"
+            />
+            <div class="carousel-play">
+              <a data-toggle="modal" data-target="#trailerMovie">
+                <img src="img/play-video.png" alt="carousel-play" />
+              </a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="img/dauan.jpg"
+              class="d-block w-100 carousel-img"
+              alt="carousel"
+            />
+            <div class="carousel-play">
+              <a data-toggle="modal" data-target="#trailerMovie">
+                <img src="img/play-video.png" alt="carousel-play" />
+              </a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="img/nang-3.jpg"
+              class="d-block w-100 carousel-img"
+              alt="carousel"
+            />
+            <div class="carousel-play">
+              <a data-toggle="modal" data-target="#trailerMovie">
+                <img src="img/play-video.png" alt="carousel-play" />
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <a
+          class="carousel-control-prev control--back"
+          href="#carouselTix"
+          role="button"
+          data-slide="prev"
+        >
+          <span aria-hidden="true"
+            ><img src="img/back-session.png" alt="back"
+          /></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next control--next" href="#carouselTix" role="button" data-slide="next">
+                        <span aria-hidden="true"><img src="img/next-session.png" alt="next"
+          /></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+                <div class="background-linear"></div>
+                </section>
+                <!-- buyTicket -->
+                <section class="buyTicket">
+                    <div class="buyTicket__content">
+                        <div class="item__dropdown dropdown col-xl-4">
+                            <a class="dropdown-toggle dropdown-toggle--edit" href="#" role="button" id="movie" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Phim
+          </a>
+                            <div class="dropdown-menu dropdown-menu--edit" aria-labelledby="movie">
+                                <a class="dropdown-item" href="#">Bloodshot (C18)</a>
+                                <a class="dropdown-item" href="#">Nắng 3: Lời Hứa Của Cha (C16)</a>
+                                <a class="dropdown-item" href="#">Vì Anh Vẫn Tin - I Still Believe (C13)</a
+            >
+            <a class="dropdown-item" href="#">Truy Tìm Phép Thuật - Onward</a>
+                                <a class="dropdown-item" href="#">Loạn Nhịp - Heartbeats (C16)</a>
+                                <a class="dropdown-item" href="#">Căn Hộ Của Quỷ - 32 Malasana Street (C18)</a
+            >
+            <a class="dropdown-item" href="#"
+              >Kẻ Vô Hình - The Invisible Man (C18)</a
+            >
+            <a class="dropdown-item" href="#"
+              >Cậu Bé Ma 2 - Brahms: The Boy 2 (C16)</a
+            >
+          </div>
+        </div>
+        <div class="item__dropdown dropdown col-xl-2">
+          <a
+            class="dropdown-toggle dropdown-toggle--edit"
+            href="#"
+            role="button"
+            id="theater"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            Rạp
+          </a>
+                                <div class="dropdown-menu dropdown-menu--edit" aria-labelledby="theater">
+                                    <a class="dropdown-item" href="#">sada</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </div>
+                            <div class="item__dropdown dropdown col-xl-2">
+                                <a class="dropdown-toggle dropdown-toggle--edit" href="#" role="button" id="dayView" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Ngày Xem
+          </a>
+                                <div class="dropdown-menu dropdown-menu--edit" aria-labelledby="dayView">
+                                    <a class="dropdown-item" href="#">sada</a>
+                                    <a class="dropdown-item" href="#">Anothdấdadasder action</a>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </div>
+                            <div class="item__dropdown dropdown col-xl-2">
+                                <a class="dropdown-toggle dropdown-toggle--edit" href="#" role="button" id="suatChieu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Suất Chiếu
+          </a>
+                                <div class="dropdown-menu dropdown-menu--edit" aria-labelledby="suatChieu">
+                                    <a class="dropdown-item" href="#">sada</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </div>
+                            <div class="item__button col-xl-2">
+                                <button class="btn" type="button">Mua vé ngay</button>
+                            </div>
+                        </div>
+                </section>
+                <!-- showTimes -->
+                <div class="showTimes" id="showTimes">
+                    <div class="showTimes__content">
+                        <ul class="nav nav-tabs d-flex justify-content-center" id="showTimesTab" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="nowShowing-tab" data-toggle="tab" href="#nowShowing" role="tab" aria-controls="nowShowing" aria-selected="true">Đang Chiếu</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              id="comingSoon-tab"
+              data-toggle="tab"
+              href="#comingSoon"
+              role="tab"
+              aria-controls="comingSoon"
+              aria-selected="false"
+              >Sắp Chiếu</a
+            >
+          </li>
+        </ul>
+        <div class="tab-content" id="showTimesTab">
+          <div
+            class="tab-pane fade show active"
+            id="nowShowing"
+            role="tabpanel"
+            aria-labelledby="home-tab"
+          >
+            <div class="nowShowing__content">
+              <div class="row">
+                <div class="col-sm-3">
+                  <div class="film">
+                    <a href="detail.html">
+                      <div class="film__image">
+                        <img src="img/bloodshot.jpg" alt="film__image" />
+                        <div class="film__play">
+                          <a
+                            href="#"
+                            data-toggle="modal"
+                            data-target="#trailerMovie"
+                          >
+                            <img src="img/play-video.png" alt="play" />
+                          </a>
+                    </div>
+                    <div class="typePoint">
+                        <span class="span--red">C18</span>
+                        <span class="point">
+                            <p>6.5</p>
+                            <p>
+                              <img src="img/star1.png" alt="star1" />
+                              <img src="img/star1.png" alt="star1" />
+                              <img src="img/star1.png" alt="star1" />
+                              <img src="img/star1.2.png" alt="star1.2" />
+                            </p>
+                          </span>
+                    </div>
+                </div>
+                </a>
+
+                <div class="film__info">
+                    <div class="info">
+                        <p>Bloodshot (C18)</p>
+                        <p>110 phút</p>
+                    </div>
+                    <div class="infoTicket">
+                        <a class="btnTicket">Mua vé</a>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="film">
+                    <div class="film__image">
+                        <img src="img/nang-3-loi-hua-cua-cha.jpg" alt="film__image" />
+                        <div class="film__play">
+                            <a href="#" data-toggle="modal" data-target="#trailerMovie">
+                                <img src="img/play-video.png" alt="play" />
+                            </a>
+                        </div>
+                        <div class="typePoint">
+                            <span class="span--red">C18</span>
+                            <span class="point">
+                          <p>6.5</p>
+                          <p>
+                            <img src="img/star1.png" alt="star1" />
+                            <img src="img/star1.png" alt="star1" />
+                            <img src="img/star1.png" alt="star1" />
+                            <img src="img/star1.2.png" alt="star1.2" />
+                          </p>
+                        </span>
+                        </div>
+                    </div>
+                    <div class="film__info">
+                        <p>Nắng 3: Lời Hứa Của Cha (C16)</p>
+                        <p>109 phút</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="film">
+                    <div class="film__image">
+                        <img src="img/vi-anh-van-tin.jpg" alt="film__image" />
+                        <div class="film__play">
+                            <a href="#" data-toggle="modal" data-target="#trailerMovie">
+                                <img src="img/play-video.png" alt="play" />
+                            </a>
+                        </div>
+                        <div class="typePoint">
+                            <span class="span--red">C18</span>
+                            <span class="point">
+                          <p>6.5</p>
+                          <p>
+                            <img src="img/star1.png" alt="star1" />
+                            <img src="img/star1.png" alt="star1" />
+                            <img src="img/star1.png" alt="star1" />
+                            <img src="img/star1.2.png" alt="star1.2" />
+                          </p>
+                        </span>
+                        </div>
+                    </div>
+                    <div class="film__info">
+                        <p>Vì Anh Vẫn Tin - I Still Believe (C13)</p>
+                        <p>117 phút</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="film">
+                    <div class="film__image">
+                        <img src="img/truy-ti-m-phe-p-thua-t-onward.jpg" alt="film__image" />
+                        <div class="film__play">
+                            <a href="#" data-toggle="modal" data-target="#trailerMovie">
+                                <img src="img/play-video.png" alt="play" />
+                            </a>
+                        </div>
+                        <div class="typePoint">
+                            <span class="span--green">P</span>
+                            <span class="point">
+                          <p>6.5</p>
+                          <p>
+                            <img src="img/star1.png" alt="star1" />
+                            <img src="img/star1.png" alt="star1" />
+                            <img src="img/star1.png" alt="star1" />
+                            <img src="img/star1.2.png" alt="star1.2" />
+                          </p>
+                        </span>
+                        </div>
+                    </div>
+                    <div class="film__info">
+                        <p>Truy Tìm Phép Thuật - Onward</p>
+                        <p>103 phút - 7.4 IMDb</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="film">
+                    <div class="film__image">
+                        <img src="img/loan-nhip.jpg" alt="film__image" />
+                        <div class="film__play">
+                            <a href="#" data-toggle="modal" data-target="#trailerMovie">
+                                <img src="img/play-video.png" alt="play" />
+                            </a>
+                        </div>
+                        <div class="typePoint">
+                            <span class="span--red">C18</span>
+                            <span class="point">
+                          <p>6.5</p>
+                          <p>
+                            <img src="img/star1.png" alt="star1" />
+                            <img src="img/star1.png" alt="star1" />
+                            <img src="img/star1.png" alt="star1" />
+                            <img src="img/star1.2.png" alt="star1.2" />
+                          </p>
+                        </span>
+                        </div>
+                    </div>
+                    <div class="film__info">
+                        <p>Loạn Nhịp - Heartbeats (C16)</p>
+                        <p>115 phút</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="film">
+                    <div class="film__image">
+                        <img src="img/can-ho-cua-quy.jpg" alt="film__image" />
+                        <div class="film__play">
+                            <a href="#" data-toggle="modal" data-target="#trailerMovie">
+                                <img src="img/play-video.png" alt="play" />
+                            </a>
+                        </div>
+                        <div class="typePoint">
+                            <span class="span--red">C18</span>
+                            <span class="point">
+                          <p>6.5</p>
+                          <p>
+                            <img src="img/star1.png" alt="star1" />
+                            <img src="img/star1.png" alt="star1" />
+                            <img src="img/star1.png" alt="star1" />
+                            <img src="img/star1.2.png" alt="star1.2" />
+                          </p>
+                        </span>
+                        </div>
+                    </div>
+                    <div class="film__info">
+                        <p>Căn Hộ Của Quỷ - 32 Malasana Street (C18)</p>
+                        <p>102 phút</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="film">
+                    <div class="film__image">
+                        <img src="img/ke-vo-hinh-the-invisible-man.jpg" alt="film__image" />
+                        <div class="film__play">
+                            <a href="#" data-toggle="modal" data-target="#trailerMovie">
+                                <img src="img/play-video.png" alt="play" />
+                            </a>
+                        </div>
+                        <div class="typePoint">
+                            <span class="span--red">C18</span>
+                            <span class="point">
+                          <p>6.5</p>
+                          <p>
+                            <img src="img/star1.png" alt="star1" />
+                            <img src="img/star1.png" alt="star1" />
+                            <img src="img/star1.png" alt="star1" />
+                            <img src="img/star1.2.png" alt="star1.2" />
+                          </p>
+                        </span>
+                        </div>
+                    </div>
+                    <div class="film__info">
+                        <p>Kẻ Vô Hình - The Invisible Man (C18)</p>
+                        <p>125 phút</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="film">
+                    <div class="film__image">
+                        <img src="img/cau-be-ma.jpg" alt="film__image" />
+                        <div class="film__play">
+                            <a href="#" data-toggle="modal" data-target="#trailerMovie">
+                                <img src="img/play-video.png" alt="play" />
+                            </a>
+                        </div>
+                        <div class="typePoint">
+                            <span class="span--red">C18</span>
+                            <span class="point">
+                          <p>6.5</p>
+                          <p>
+                            <img src="img/star1.png" alt="star1" />
+                            <img src="img/star1.png" alt="star1" />
+                            <img src="img/star1.png" alt="star1" />
+                            <img src="img/star1.2.png" alt="star1.2" />
+                          </p>
+                        </span>
+                        </div>
+                    </div>
+                    <div class="film__info">
+                        <p>Cậu Bé Ma 2 - Brahms: The Boy 2 (C16)</p>
+                        <p>84 phút</p>
+                    </div>
+                </div>
+            </div>
+            </div>
+            </div>
+            </div>
+            <div class="tab-pane fade" id="comingSoon" role="tabpanel" aria-labelledby="profile-tab">
+                <div class="sapchieu__content comingSoon__content owl-carousel owl-theme">
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <div class="film">
+                                <div class="film__image">
+                                    <img src="img/vo-dien-sat-nhan.jpg" alt="vo-dien-sat-nhan" />
+                                    <div class="film__play">
+                                        <a href="#" data-toggle="modal" data-target="#trailerMovie">
+                                            <img src="img/play-video.png" alt="play" />
+                                        </a>
+                                    </div>
+                                    <div class="typePoint">
+                                        <span class="span--green">P</span>
+                                        <span>17/04</span>
+                                    </div>
+                                </div>
+                                <div class="film__info">
+                                    <p>Vô Diện Sát Nhân</p>
+                                    <p>100 phút</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="film">
+                                <div class="film__image">
+                                    <img src="img/loan-nhip.jpg" alt="film__image" />
+                                    <div class="film__play">
+                                        <a href="#" data-toggle="modal" data-target="#trailerMovie">
+                                            <img src="img/play-video.png" alt="play" />
+                                        </a>
+                                    </div>
+                                    <div class="typePoint">
+                                        <span class="span--green">P</span>
+                                        <span>17/04</span>
+                                    </div>
+                                </div>
+                                <div class="film__info">
+                                    <p>Khu Vườn Huyền Bí - The Secret Garden</p>
+                                    <p>115 phút</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="film">
+                                <div class="film__image">
+                                    <img src="img/vo-dien-sat-nhan.jpg" alt="vo-dien-sat-nhan" />
+                                    <div class="film__play">
+                                        <a href="#" data-toggle="modal" data-target="#trailerMovie">
+                                            <img src="img/play-video.png" alt="play" />
+                                        </a>
+                                    </div>
+                                    <div class="typePoint">
+                                        <span class="span--green">P</span>
+                                        <span>17/04</span>
+                                    </div>
+                                </div>
+                                <div class="film__info">
+                                    <p>Vô Diện Sát Nhân</p>
+                                    <p>100 phút</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="film">
+                                <div class="film__image">
+                                    <img src="img/loan-nhip.jpg" alt="film__image" />
+                                    <div class="film__play">
+                                        <a href="#" data-toggle="modal" data-target="#trailerMovie">
+                                            <img src="img/play-video.png" alt="play" />
+                                        </a>
+                                    </div>
+                                    <div class="typePoint">
+                                        <span class="span--green">P</span>
+                                        <span>17/04</span>
+                                    </div>
+                                </div>
+                                <div class="film__info">
+                                    <p>Khu Vườn Huyền Bí - The Secret Garden</p>
+                                    <p>115 phút</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="film">
+                                <div class="film__image">
+                                    <img src="img/vo-dien-sat-nhan.jpg" alt="vo-dien-sat-nhan" />
+                                    <div class="film__play">
+                                        <a href="#" data-toggle="modal" data-target="#trailerMovie">
+                                            <img src="img/play-video.png" alt="play" />
+                                        </a>
+                                    </div>
+                                    <div class="typePoint">
+                                        <span class="span--green">P</span>
+                                        <span>17/04</span>
+                                    </div>
+                                </div>
+                                <div class="film__info">
+                                    <p>Vô Diện Sát Nhân</p>
+                                    <p>100 phút</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="film">
+                                <div class="film__image">
+                                    <img src="img/loan-nhip.jpg" alt="film__image" />
+                                    <div class="film__play">
+                                        <a href="#" data-toggle="modal" data-target="#trailerMovie">
+                                            <img src="img/play-video.png" alt="play" />
+                                        </a>
+                                    </div>
+                                    <div class="typePoint">
+                                        <span class="span--green">P</span>
+                                        <span>17/04</span>
+                                    </div>
+                                </div>
+                                <div class="film__info">
+                                    <p>Khu Vườn Huyền Bí - The Secret Garden</p>
+                                    <p>115 phút</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="film">
+                                <div class="film__image">
+                                    <img src="img/vo-dien-sat-nhan.jpg" alt="vo-dien-sat-nhan" />
+                                    <div class="film__play">
+                                        <a href="#" data-toggle="modal" data-target="#trailerMovie">
+                                            <img src="img/play-video.png" alt="play" />
+                                        </a>
+                                    </div>
+                                    <div class="typePoint">
+                                        <span class="span--green">P</span>
+                                        <span>17/04</span>
+                                    </div>
+                                </div>
+                                <div class="film__info">
+                                    <p>Vô Diện Sát Nhân</p>
+                                    <p>100 phút</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="film">
+                                <div class="film__image">
+                                    <img src="img/loan-nhip.jpg" alt="film__image" />
+                                    <div class="film__play">
+                                        <a href="#" data-toggle="modal" data-target="#trailerMovie">
+                                            <img src="img/play-video.png" alt="play" />
+                                        </a>
+                                    </div>
+                                    <div class="typePoint">
+                                        <span class="span--green">P</span>
+                                        <span>17/04</span>
+                                    </div>
+                                </div>
+                                <div class="film__info">
+                                    <p>Khu Vườn Huyền Bí - The Secret Garden</p>
+                                    <p>115 phút</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <div class="film">
+                                <div class="film__image">
+                                    <img src="img/vo-dien-sat-nhan.jpg" alt="vo-dien-sat-nhan" />
+                                    <div class="film__play">
+                                        <a href="#" data-toggle="modal" data-target="#trailerMovie">
+                                            <img src="img/play-video.png" alt="play" />
+                                        </a>
+                                    </div>
+                                    <div class="typePoint">
+                                        <span class="span--green">P</span>
+                                        <span>17/04</span>
+                                    </div>
+                                </div>
+                                <div class="film__info">
+                                    <p>Vô Diện Sát Nhân</p>
+                                    <p>100 phút</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="film">
+                                <div class="film__image">
+                                    <img src="img/loan-nhip.jpg" alt="film__image" />
+                                    <div class="film__play">
+                                        <a href="#" data-toggle="modal" data-target="#trailerMovie">
+                                            <img src="img/play-video.png" alt="play" />
+                                        </a>
+                                    </div>
+                                    <div class="typePoint">
+                                        <span class="span--green">P</span>
+                                        <span>17/04</span>
+                                    </div>
+                                </div>
+                                <div class="film__info">
+                                    <p>Khu Vườn Huyền Bí - The Secret Garden</p>
+                                    <p>115 phút</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="film">
+                                <div class="film__image">
+                                    <img src="img/vo-dien-sat-nhan.jpg" alt="vo-dien-sat-nhan" />
+                                    <div class="film__play">
+                                        <a href="#" data-toggle="modal" data-target="#trailerMovie">
+                                            <img src="img/play-video.png" alt="play" />
+                                        </a>
+                                    </div>
+                                    <div class="typePoint">
+                                        <span class="span--green">P</span>
+                                        <span>17/04</span>
+                                    </div>
+                                </div>
+                                <div class="film__info">
+                                    <p>Vô Diện Sát Nhân</p>
+                                    <p>100 phút</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="film">
+                                <div class="film__image">
+                                    <img src="img/loan-nhip.jpg" alt="film__image" />
+                                    <div class="film__play">
+                                        <a href="#" data-toggle="modal" data-target="#trailerMovie">
+                                            <img src="img/play-video.png" alt="play" />
+                                        </a>
+                                    </div>
+                                    <div class="typePoint">
+                                        <span class="span--green">P</span>
+                                        <span>17/04</span>
+                                    </div>
+                                </div>
+                                <div class="film__info">
+                                    <p>Khu Vườn Huyền Bí - The Secret Garden</p>
+                                    <p>115 phút</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="film">
+                                <div class="film__image">
+                                    <img src="img/vo-dien-sat-nhan.jpg" alt="vo-dien-sat-nhan" />
+                                    <div class="film__play">
+                                        <a href="#" data-toggle="modal" data-target="#trailerMovie">
+                                            <img src="img/play-video.png" alt="play" />
+                                        </a>
+                                    </div>
+                                    <div class="typePoint">
+                                        <span class="span--green">P</span>
+                                        <span>17/04</span>
+                                    </div>
+                                </div>
+                                <div class="film__info">
+                                    <p>Vô Diện Sát Nhân</p>
+                                    <p>100 phút</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="film">
+                                <div class="film__image">
+                                    <img src="img/loan-nhip.jpg" alt="film__image" />
+                                    <div class="film__play">
+                                        <a href="#" data-toggle="modal" data-target="#trailerMovie">
+                                            <img src="img/play-video.png" alt="play" />
+                                        </a>
+                                    </div>
+                                    <div class="typePoint">
+                                        <span class="span--green">P</span>
+                                        <span>17/04</span>
+                                    </div>
+                                </div>
+                                <div class="film__info">
+                                    <p>Khu Vườn Huyền Bí - The Secret Garden</p>
+                                    <p>115 phút</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="film">
+                                <div class="film__image">
+                                    <img src="img/vo-dien-sat-nhan.jpg" alt="vo-dien-sat-nhan" />
+                                    <div class="film__play">
+                                        <a href="#" data-toggle="modal" data-target="#trailerMovie">
+                                            <img src="img/play-video.png" alt="play" />
+                                        </a>
+                                    </div>
+                                    <div class="typePoint">
+                                        <span class="span--green">P</span>
+                                        <span>17/04</span>
+                                    </div>
+                                </div>
+                                <div class="film__info">
+                                    <p>Vô Diện Sát Nhân</p>
+                                    <p>100 phút</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="film">
+                                <div class="film__image">
+                                    <img src="img/loan-nhip.jpg" alt="film__image" />
+                                    <div class="film__play">
+                                        <a href="#" data-toggle="modal" data-target="#trailerMovie">
+                                            <img src="img/play-video.png" alt="play" />
+                                        </a>
+                                    </div>
+                                    <div class="typePoint">
+                                        <span class="span--green">P</span>
+                                        <span>17/04</span>
+                                    </div>
+                                </div>
+                                <div class="film__info">
+                                    <p>Khu Vườn Huyền Bí - The Secret Garden</p>
+                                    <p>115 phút</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            </div>
+            </div>
+            <!-- movieTheater -->
+            <section class="movieTheater" id="movieTheater">
+                <div class="movieTheater__background"></div>
+                <div class="movieTheater__content">
+                    <div class="nav nav-pills flex-column" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                        <a class="nav-item nav-link active" id="nav-cgv-tab" data-toggle="tab" href="#CGV" role="tab" aria-controls="CGV" aria-selected="true">
+                            <img src="img/cgv.png" alt="CGV" />
+                        </a>
+                        <a class="nav-item nav-link" id="nav-bhd-tab" data-toggle="tab" href="#BHD" role="tab" aria-controls="BHD" aria-selected="false">
+                            <img src="img/bhd.png" alt="BHD" />
+                        </a>
+                        <a class="nav-item nav-link" id="nav-galaxy-tab" data-toggle="tab" href="#GALAXY" role="tab" aria-controls="GALAXY" aria-selected="false">
+                            <img src="img/galaxycine.png" alt="GALAXY" />
+                        </a>
+                        <a class="nav-item nav-link" id="nav-ddc-tab" data-toggle="tab" href="#DDC" role="tab" aria-controls="DDC" aria-selected="false">
+                            <img src="img/dongdacinema.png" alt="DDC" />
+                        </a>
+                        <a class="nav-item nav-link" id="nav-megags-tab" data-toggle="tab" href="#MEGAGS" role="tab" aria-controls="MEGAGS" aria-selected="false">
+                            <img src="img/megags.png" alt="MEGAGS" />
+                        </a>
+                        <a class="nav-item nav-link" id="nav-dcine-tab" data-toggle="tab" href="#DCINE" role="tab" aria-controls="DCINE" aria-selected="false">
+                            <img src="img/dcine.png" alt="DCINE" />
+                        </a>
+                        <a class="nav-item nav-link" id="nav-lotte-tab" data-toggle="tab" href="#LOTTE" role="tab" aria-controls="LOTTE" aria-selected="false">
+                            <img src="img/lottecinema.png" alt="LOTTE" />
+                        </a>
+                    </div>
+                    <div class="tab-content" id="v-pills-tabContent">
+                        <div class="tab-pane fade show active" id="CGV" role="tabpanel" aria-labelledby="nav-cgv-tab">
+                            <div class="cinemaLocation active">
+                                <img class="imgCinema" src="img/movieTheater/cgv-saigonres-nguyen-xi.jpg" alt="CGV" />
+                                <div class="cinemaInfo">
+                                    <p><span>CGV</span> - Saigonres Nguyễn Xí</p>
+                                    <p>
+                                        Tầng 4-5, Saigonres Plaza, 79/81 Nguyễn Xí, P 26, Q Bình Thạnh
+                                    </p>
+                                    <p><a href="">[chi tiết]</a></p>
+                                </div>
+                            </div>
+                            <div class="cinemaLocation">
+                                <img class="imgCinema" src="img/movieTheater/cgv-saigonres-nguyen-xi.jpg" alt="CGV" />
+                                <div class="cinemaInfo">
+                                    <p><span>CGV</span> - Trường Sơn (CGV CT Plaza)</p>
+                                    <p>
+                                        Tầng 10, Tòa nhà Vietjet Plaza, 60A Trường Sơn, P.2, Q. Tân Bình, TP.HCM, Việt Nam
+                                    </p>
+                                    <p><a href="">[chi tiết]</a></p>
+                                </div>
+                            </div>
+                            <div class="cinemaLocation">
+                                <img class="imgCinema" src="img/movieTheater/cgv-saigonres-nguyen-xi.jpg" alt="CGV" />
+                                <div class="cinemaInfo">
+                                    <p><span>CGV</span> - Vivo City</p>
+                                    <p>
+                                        Lầu 5, Trung tâm thương mại SC VivoCity - 1058 Nguyễn Văn Linh, Quận 7
+                                    </p>
+                                    <p><a href="">[chi tiết]</a></p>
+                                </div>
+                            </div>
+                            <div class="cinemaLocation">
+                                <img class="imgCinema" src="img/movieTheater/cgv-saigonres-nguyen-xi.jpg" alt="CGV" />
+                                <div class="cinemaInfo">
+                                    <p><span>CGV</span> - Sư Vạn Hạnh</p>
+                                    <p>Tầng 6, Vạn Hạnh Mall, 11 Sư Vạn Hạnh, Phường 12, Quận 10</p>
+                                    <p><a href="">[chi tiết]</a></p>
+                                </div>
+                            </div>
+                            <div class="cinemaLocation">
+                                <img class="imgCinema" src="img/movieTheater/cgv-saigonres-nguyen-xi.jpg" alt="CGV" />
+                                <div class="cinemaInfo">
+                                    <p><span>CGV</span> - Pandora City</p>
+                                    <p>
+                                        Lầu 3, Pandora City 1/1 Trường Chinh Quận Tân Phú TP. Hồ Chí Minh
+                                    </p>
+                                    <p><a href="">[chi tiết]</a></p>
+                                </div>
+                            </div>
+                            <div class="cinemaLocation">
+                                <img class="imgCinema" src="img/movieTheater/cgv-saigonres-nguyen-xi.jpg" alt="CGV" />
+                                <div class="cinemaInfo">
+                                    <p><span>CGV</span> - Pearl Plaza</p>
+                                    <p>
+                                        Tầng 5, Pearl Plaza, 561A Điện Biên Phủ, P.25, Q.Bình Thạnh, TP.HCM
+                                    </p>
+                                    <p><a href="">[chi tiết]</a></p>
+                                </div>
+                            </div>
+                            <div class="cinemaLocation">
+                                <img class="imgCinema" src="img/movieTheater/cgv-cuchi.jpg" alt="CGV" />
+                                <div class="cinemaInfo">
+                                    <p><span>CGV</span> - Satra Củ Chi</p>
+                                    <p>
+                                        Tầng 3, TTTM Satra Củ Chi, Số 1239, Tỉnh Lộ 8, Ấp Thạnh An, Xã Trung An, Huyện Củ Chi, TP.HCM
+                                    </p>
+                                    <p><a href="">[chi tiết]</a></p>
+                                </div>
+                            </div>
+                            <div class="cinemaLocation">
+                                <img class="imgCinema" src="img/movieTheater/cgv-saigonres-nguyen-xi.jpg" alt="CGV" />
+                                <div class="cinemaInfo">
+                                    <p><span>CGV</span> - Aeon Tân Phú</p>
+                                    <p>
+                                        Lầu 3, Aeon Mall 30 Bờ Bao Tân Thắng, P. Sơn Kỳ Quận Tân Phú TP. Hồ Chí Minh
+                                    </p>
+                                    <p><a href="">[chi tiết]</a></p>
+                                </div>
+                            </div>
+                            <div class="cinemaLocation">
+                                <img class="imgCinema" src="img/movieTheater/cgv-saigonres-nguyen-xi.jpg" alt="CGV" />
+                                <div class="cinemaInfo">
+                                    <p><span>CGV</span> - Parkson Đồng Khởi</p>
+                                    <p>
+                                        Tầng 5, số 35 bis-45, đường Lê Thánh Tôn, Phường Bến Nghé, Quận 1, Tp. Hồ Chí Minh, Việt Nam
+                                    </p>
+                                    <p><a href="">[chi tiết]</a></p>
+                                </div>
+                            </div>
+                            <div class="cinemaLocation">
+                                <img class="imgCinema" src="img/movieTheater/cgv-saigonres-nguyen-xi.jpg" alt="CGV" />
+                                <div class="cinemaInfo">
+                                    <p><span>CGV</span> - Vincom Gò Vấp</p>
+                                    <p>
+                                        Tầng 5 TTTM Vincom Plaza Gò Vấp, 12 Phan Văn Trị, Phường 7, Quận Gò Vấp
+                                    </p>
+                                    <p><a href="">[chi tiết]</a></p>
+                                </div>
+                            </div>
+                            <div class="cinemaLocation">
+                                <img class="imgCinema" src="img/movieTheater/cgv-saigonres-nguyen-xi.jpg" alt="CGV" />
+                                <div class="cinemaInfo">
+                                    <p><span>CGV</span> - Vincom Center Landmark 81</p>
+                                    <p>
+                                        Tầng B1 , TTTM Vincom Center Landmark 81, 772 Điện Biên Phủ, P.22, Q. Bình Thạnh, HCM
+                                    </p>
+                                    <p><a href="">[chi tiết]</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="BHD" role="tabpanel" aria-labelledby="nav-bhd-tab">
+                            <div class="cinemaLocation active">
+                                <img class="imgCinema" src="img/movieTheater/cgv-saigonres-nguyen-xi.jpg" alt="CGV" />
+                                <div class="cinemaInfo">
+                                    <p><span>BHD</span> - Saigonres Nguyễn Xí</p>
+                                    <p>
+                                        Tầng 4-5, Saigonres Plaza, 79/81 Nguyễn Xí, P 26, Q Bình Thạnh
+                                    </p>
+                                    <p><a href="">[chi tiết]</a></p>
+                                </div>
+                            </div>
+                            <div class="cinemaLocation">
+                                <img class="imgCinema" src="img/movieTheater/cgv-saigonres-nguyen-xi.jpg" alt="CGV" />
+                                <div class="cinemaInfo">
+                                    <p><span>BHD</span> - Trường Sơn (CGV CT Plaza)</p>
+                                    <p>
+                                        Tầng 10, Tòa nhà Vietjet Plaza, 60A Trường Sơn, P.2, Q. Tân Bình, TP.HCM, Việt Nam
+                                    </p>
+                                    <p><a href="">[chi tiết]</a></p>
+                                </div>
+                            </div>
+                            <div class="cinemaLocation">
+                                <img class="imgCinema" src="img/movieTheater/cgv-saigonres-nguyen-xi.jpg" alt="CGV" />
+                                <div class="cinemaInfo">
+                                    <p><span>BHD</span> - Vivo City</p>
+                                    <p>
+                                        Lầu 5, Trung tâm thương mại SC VivoCity - 1058 Nguyễn Văn Linh, Quận 7
+                                    </p>
+                                    <p><a href="">[chi tiết]</a></p>
+                                </div>
+                            </div>
+                            <div class="cinemaLocation">
+                                <img class="imgCinema" src="img/movieTheater/cgv-saigonres-nguyen-xi.jpg" alt="CGV" />
+                                <div class="cinemaInfo">
+                                    <p><span>BHD</span> - Sư Vạn Hạnh</p>
+                                    <p>Tầng 6, Vạn Hạnh Mall, 11 Sư Vạn Hạnh, Phường 12, Quận 10</p>
+                                    <p><a href="">[chi tiết]</a></p>
+                                </div>
+                            </div>
+                            <div class="cinemaLocation">
+                                <img class="imgCinema" src="img/movieTheater/cgv-saigonres-nguyen-xi.jpg" alt="CGV" />
+                                <div class="cinemaInfo">
+                                    <p><span>BHD</span> - Pandora City</p>
+                                    <p>
+                                        Lầu 3, Pandora City 1/1 Trường Chinh Quận Tân Phú TP. Hồ Chí Minh
+                                    </p>
+                                    <p><a href="">[chi tiết]</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="GALAXY" role="tabpanel" aria-labelledby="nav-galaxy-tab">
+                            <div class="cinemaLocation active">
+                                <img class="imgCinema" src="img/movieTheater/cgv-saigonres-nguyen-xi.jpg" alt="CGV" />
+                                <div class="cinemaInfo">
+                                    <p><span>BHD</span> - Saigonres Nguyễn Xí</p>
+                                    <p>
+                                        Tầng 4-5, Saigonres Plaza, 79/81 Nguyễn Xí, P 26, Q Bình Thạnh
+                                    </p>
+                                    <p><a href="">[chi tiết]</a></p>
+                                </div>
+                            </div>
+                            <div class="cinemaLocation">
+                                <img class="col-sm-3 px-0" src="img/movieTheater/cgv-saigonres-nguyen-xi.jpg" alt="CGV" />
+                                <div class="cinemaInfo col-sm-9 px-0">
+                                    <p><span>BHD</span> - Trường Sơn (CGV CT Plaza)</p>
+                                    <p>
+                                        Tầng 10, Tòa nhà Vietjet Plaza, 60A Trường Sơn, P.2, Q. Tân Bình, TP.HCM, Việt Nam
+                                    </p>
+                                    <p><a href="">[chi tiết]</a></p>
+                                </div>
+                            </div>
+                            <div class="cinemaLocation">
+                                <img class="imgCinema" src="img/movieTheater/cgv-saigonres-nguyen-xi.jpg" alt="CGV" />
+                                <div class="cinemaInfo">
+                                    <p><span>BHD</span> - Vivo City</p>
+                                    <p>
+                                        Lầu 5, Trung tâm thương mại SC VivoCity - 1058 Nguyễn Văn Linh, Quận 7
+                                    </p>
+                                    <p><a href="">[chi tiết]</a></p>
+                                </div>
+                            </div>
+                            <div class="cinemaLocation">
+                                <img class="imgCinema" src="img/movieTheater/cgv-saigonres-nguyen-xi.jpg" alt="CGV" />
+                                <div class="cinemaInfo">
+                                    <p><span>BHD</span> - Sư Vạn Hạnh</p>
+                                    <p>Tầng 6, Vạn Hạnh Mall, 11 Sư Vạn Hạnh, Phường 12, Quận 10</p>
+                                    <p><a href="">[chi tiết]</a></p>
+                                </div>
+                            </div>
+                            <div class="cinemaLocation">
+                                <img class="imgCinema" src="img/movieTheater/cgv-saigonres-nguyen-xi.jpg" alt="CGV" />
+                                <div class="cinemaInfo">
+                                    <p><span>BHD</span> - Pandora City</p>
+                                    <p>
+                                        Lầu 3, Pandora City 1/1 Trường Chinh Quận Tân Phú TP. Hồ Chí Minh
+                                    </p>
+                                    <p><a href="">[chi tiết]</a></p>
+                                </div>
+                            </div>
+                            <div class="cinemaLocation">
+                                <img class="imgCinema" src="img/movieTheater/cgv-saigonres-nguyen-xi.jpg" alt="CGV" />
+                                <div class="cinemaInfo">
+                                    <p><span>BHD</span> - Vivo City</p>
+                                    <p>
+                                        Lầu 5, Trung tâm thương mại SC VivoCity - 1058 Nguyễn Văn Linh, Quận 7
+                                    </p>
+                                    <p><a href="">[chi tiết]</a></p>
+                                </div>
+                            </div>
+                            <div class="cinemaLocation">
+                                <img class="imgCinema" src="img/movieTheater/cgv-saigonres-nguyen-xi.jpg" alt="CGV" />
+                                <div class="cinemaInfo">
+                                    <p><span>BHD</span> - Sư Vạn Hạnh</p>
+                                    <p>Tầng 6, Vạn Hạnh Mall, 11 Sư Vạn Hạnh, Phường 12, Quận 10</p>
+                                    <p><a href="">[chi tiết]</a></p>
+                                </div>
+                            </div>
+                            <div class="cinemaLocation">
+                                <img class="imgCinema" src="img/movieTheater/cgv-saigonres-nguyen-xi.jpg" alt="CGV" />
+                                <div class="cinemaInfo">
+                                    <p><span>BHD</span> - Pandora City</p>
+                                    <p>
+                                        Lầu 3, Pandora City 1/1 Trường Chinh Quận Tân Phú TP. Hồ Chí Minh
+                                    </p>
+                                    <p><a href="">[chi tiết]</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="DDC" role="tabpanel" aria-labelledby="nav-ddc-tab">
+                            DDC
+                        </div>
+                        <div class="tab-pane fade" id="MEGAGS" role="tabpanel" aria-labelledby="nav-megags-tab">
+                            MEGAGS
+                        </div>
+                        <div class="tab-pane fade" id="DCINE" role="tabpanel" aria-labelledby="nav-dcine-tab">
+                            DCINE
+                        </div>
+                        <div class="tab-pane fade" id="LOTTE" role="tabpanel" aria-labelledby="nav-lotte-tab">
+                            LOTTE
+                        </div>
+                    </div>
+                    <div class="listMovie">
+                        <p>Không có suất chiếu</p>
+                    </div>
+                </div>
+            </section>
+            <!-- news -->
+            <section class="news" id="news">
+                <div class="news__nav">
+                    <ul class="nav nav-tabs" id="introduceabcTab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Điện Ảnh 24h</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              id="review-tab"
+              data-toggle="tab"
+              href="#review"
+              role="tab"
+              aria-controls="review"
+              aria-selected="false"
+              >Review</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              id="promotion-tab"
+              data-toggle="tab"
+              href="#promotion"
+              role="tab"
+              aria-controls="promotion"
+              aria-selected="false"
+              >Khuyến Mãi</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="news__content">
+        <div class="tab-content" id="introduceabcTabContent">
+          <div
+            class="tab-pane fade show active"
+            id="home"
+            role="tabpanel"
+            aria-labelledby="home-tab"
+          >
+            <div class="introduce">
+              <div class="introduce__item">
+                <a href="">
+                  <img
+                    src="img/22-thuat-ngu-bo-tui-cho-fan-dien-anh.jpg"
+                    alt="22"
+                  />
+                  <p>22 thuật ngữ 'bỏ túi' cho fan điện ảnh</p>
+                </a>
+                            <p>
+                                Điện ảnh ngày càng phổ biến qua Internert, những thuật ngữ như "Easter Egg”, “Streaming”,… được đề cập càng nhiều hơn.
+                            </p>
+                            <div class="item__icon">
+                                <div class="like">
+                                    <img src="img/like.png" alt="like" />
+                                    <span>0</span>
+                                </div>
+                                <div class="comment">
+                                    <a href="">
+                                        <img src="img/comment.png" alt="comment" />
+                                        <span>0</span>
+                                    </a>
+                                </div>
+                            </div>
+                </div>
+                <div class="introduce__item">
+                    <a href="#">
+                        <img src="img/cap-nhat-tinh-hinh-tam-ngung-hoat-dong.jpg" alt="22" />
+                        <p>
+                            [Cập nhật] Tình hình tạm ngưng hoạt động của các Rạp Phim.
+                        </p>
+                    </a>
+                    <p>
+                        Điện ảnh ngày càng phổ biến qua Internert, những thuật ngữ như "Easter Egg”, “Streaming”,… được đề cập càng nhiều hơn.
+                    </p>
+                    <div class="item__icon">
+                        <div class="like">
+                            <img src="img/like.png" alt="like" />
+                            <span>0</span>
+                        </div>
+                        <div class="comment">
+                            <a href="">
+                                <img src="img/comment.png" alt="comment" />
+                                <span>0</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="clear"></div>
+                <div class="review">
+                    <div class="review__item">
+                        <a href="">
+                            <img src="img/studio-ghibli.jpg" alt="studio-ghibli" />
+                            <p>
+                                Đâu là những nhân vật đáng nhớ xuất thân từ Studio Ghibli?
+                            </p>
+                        </a>
+                        <p>
+                            Totoro, phi công mặt heo Porco Rosso, công chúa San, Vô Diện,... là những biểu tượng mà Studio Ghibli từng đem đến cho người hâm mộ trên toàn cầu.
+                        </p>
+                        <div class="item__icon">
+                            <div class="like">
+                                <img src="img/like.png" alt="like" />
+                                <span>0</span>
+                            </div>
+                            <div class="comment">
+                                <a href="">
+                                    <img src="img/comment.png" alt="comment" />
+                                    <span>0</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review__item">
+                        <a href="">
+                            <img src="img/nav1.jpg" alt="so-do" />
+                            <p>
+                                Số Đỏ sẽ bước lên màn ảnh dưới sự chỉ đạo của Phan Gia Nhật Linh
+                            </p>
+                        </a>
+                        <p>
+                            Khán giả Việt Nam sẽ được gặp Xuân Tóc Đỏ, Phó Đoan,... trên màn bạc điện ảnh.
+                        </p>
+                        <div class="item__icon">
+                            <div class="like">
+                                <img src="img/like.png" alt="like" />
+                                <span>0</span>
+                            </div>
+                            <div class="comment">
+                                <a href="">
+                                    <img src="img/comment.png" alt="comment" />
+                                    <span>0</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review__itemEnd">
+                        <div class="endItem">
+                            <a class="imgReview" href="">
+                                <img src="img/nav2.jpg" alt="cigarettes" />
+                            </a>
+                            <a href="">
+                                <p class="introReview">
+                                    Cigarettes After Sex chợt thoáng xuất hiện trong trailer phim tâm lý Promising Young Woman
+                                </p>
+                            </a>
+                        </div>
+                        <div class="clear"></div>
+                        <div class="endItem">
+                            <a class="imgReview" href="">
+                                <img src="img/nav3.jpg" alt="cigarettes" />
+                            </a>
+                            <a href="">
+                                <p class="introReview">
+                                    Cigarettes After Sex chợt thoáng xuất hiện trong trailer phim tâm lý Promising Young Woman
+                                </p>
+                            </a>
+                        </div>
+                        <div class="clear"></div>
+                        <div class="endItem">
+                            <a class="imgReview" href="">
+                                <img src="img/nav3.jpg" alt="cigarettes" />
+                            </a>
+                            <a href="">
+                                <p class="introReview">
+                                    Cigarettes After Sex chợt thoáng xuất hiện trong trailer phim tâm lý Promising Young Woman
+                                </p>
+                            </a>
+                        </div>
+                        <div class="clear"></div>
+                        <div class="endItem">
+                            <a class="imgReview" href="">
+                                <img src="img/nav4.jpg" alt="cigarettes" />
+                            </a>
+                            <a href="">
+                                <p class="introReview">
+                                    Cigarettes After Sex chợt thoáng xuất hiện trong trailer phim tâm lý Promising Young Woman
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="clear"></div>
+                <div class="newsButton d-flex justify-content-center">
+                    <button class="btn btn--white">Xem thêm</button>
+                </div>
+                </div>
+                <div class="tab-pane fade" id="review" role="tabpanel" aria-labelledby="review-tab">
+                    <div class="introduce">
+                        <div class="introduce__item">
+                            <a href="">
+                                <img src="img/covid-19.jpg" alt="covid-19" />
+                                <p>
+                                    COVID-19 là bản chính thức của MEV-1 phim contagion (2011)
+                                </p>
+                            </a>
+                            <p>
+                                Là một bộ phim chính kịch được ra mắt vào năm 2011, với bộ đôi đạo diễn và biên kịch là Steven Soderbergh và Scott Z. Burns, cùng sự tham gia của dàn sao như Gwyneth Paltrow, Matt Damon, Kate Winslet, Marion Cotillard, Laurence
+                            </p>
+                            <div class="item__icon">
+                                <div class="like">
+                                    <img src="img/like.png" alt="like" />
+                                    <span>0</span>
+                                </div>
+                                <div class="comment">
+                                    <a href="">
+                                        <img src="img/comment.png" alt="comment" />
+                                        <span>0</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="introduce__item">
+                            <a href="#">
+                                <img src="img/sieuvesisovo.jpg" alt="sieuvesisovo" />
+                                <p>
+                                    [Review] Siêu Vệ Sĩ Sợ Vợ - Giải cứu Tổng thống chưa bao giờ lầy lội và hài hước đến thế
+                                </p>
+                            </a>
+                            <p>
+                                Nhây vô đối, cười ngả nghiêng với phong cách cứu sếp sòng đậm chất Thái.
+                            </p>
+                            <div class="item__icon">
+                                <div class="like">
+                                    <img src="img/like.png" alt="like" />
+                                    <span>0</span>
+                                </div>
+                                <div class="comment">
+                                    <a href="">
+                                        <img src="img/comment.png" alt="comment" />
+                                        <span>0</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                    <div class="review">
+                        <div class="review__item">
+                            <a href="">
+                                <img src="img/bloodshot-review.jpg" alt="bloodshot-review" />
+                                <p>
+                                    [Review] Bloodshot - Mở màn ấn tượng cho Vũ trụ Siêu anh hùng Valiant
+                                </p>
+                            </a>
+                            <p>
+                                Với chất lượng hành động tốt, nội dung ở mức ổn, Bloodshot đã hoàn thành xuất sắc vai trò mở màn cho một vũ trụ siêu anh hùng mới của hãng Valiant.
+                            </p>
+                            <div class="item__icon">
+                                <div class="like">
+                                    <img src="img/like.png" alt="like" />
+                                    <span>0</span>
+                                </div>
+                                <div class="comment">
+                                    <a href="">
+                                        <img src="img/comment.png" alt="comment" />
+                                        <span>0</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="review__item">
+                            <a href="">
+                                <img src="img/nang-3-review.jpg" alt="nang-3-review" />
+                                <p>
+                                    [Review] Nắng 3: Lời Hứa Của Cha - Câu chuyện tình thân cảm động của Khả Như và Kiều Minh Tuấn
+                                </p>
+                            </a>
+                            <p>
+                                Như hai phần phim trước, Nắng 3 tiếp tục mang đến câu chuyện tình cha, mẹ - con đầy nước mắt của bộ ba nhân vật chính.
+                            </p>
+                            <div class="item__icon">
+                                <div class="like">
+                                    <img src="img/like.png" alt="like" />
+                                    <span>0</span>
+                                </div>
+                                <div class="comment">
+                                    <a href="">
+                                        <img src="img/comment.png" alt="comment" />
+                                        <span>0</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="review__itemEnd">
+                            <div class="endItem">
+                                <a class="imgReview" href="">
+                                    <img src="img/nav2.jpg" alt="cigarettes" />
+                                </a>
+                                <a href="">
+                                    <p class="introReview">
+                                        Cigarettes After Sex chợt thoáng xuất hiện trong trailer phim tâm lý Promising Young Woman
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="clear"></div>
+                            <div class="endItem">
+                                <a class="imgReview" href="">
+                                    <img src="img/nav3.jpg" alt="cigarettes" />
+                                </a>
+                                <a href="">
+                                    <p class="introReview">
+                                        Cigarettes After Sex chợt thoáng xuất hiện trong trailer phim tâm lý Promising Young Woman
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="clear"></div>
+                            <div class="endItem">
+                                <a class="imgReview" href="">
+                                    <img src="img/nav3.jpg" alt="cigarettes" />
+                                </a>
+                                <a href="">
+                                    <p class="introReview">
+                                        Cigarettes After Sex chợt thoáng xuất hiện trong trailer phim tâm lý Promising Young Woman
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="clear"></div>
+                            <div class="endItem">
+                                <a class="imgReview" href="">
+                                    <img src="img/nav4.jpg" alt="cigarettes" />
+                                </a>
+                                <a href="">
+                                    <p class="introReview">
+                                        Cigarettes After Sex chợt thoáng xuất hiện trong trailer phim tâm lý Promising Young Woman
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                    <div class="newsButton d-flex justify-content-center">
+                        <button class="btn btn--white">Xem thêm</button>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="promotion" role="tabpanel" aria-labelledby="promotion-tab">
+                    <div class="introduce">
+                        <div class="introduce__item">
+                            <a href="">
+                                <img src="img/cgv-bhd-star-mua-2-ve-tinh-tien-1.jpg" alt="cgv-bhd-star-mua-2-ve-tinh-tien-1" />
+                                <p>
+                                    CGV & BHD Star – Mua 2 vé tính tiền 1 khi thanh toán qua ZaloPay
+                                </p>
+                            </a>
+                            <p>
+                                Áp dụng cho khách hàng mới của ZaloPay khi mua tại CGV HOẶC BHD Star các suất chiếu Thứ 6, Thứ 7, Chủ Nhật.
+                            </p>
+                            <div class="item__icon">
+                                <div class="like">
+                                    <img src="img/like.png" alt="like" />
+                                    <span>0</span>
+                                </div>
+                                <div class="comment">
+                                    <a href="">
+                                        <img src="img/comment.png" alt="comment" />
+                                        <span>0</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="introduce__item">
+                            <a href="#">
+                                <img src="img/hoan-tien-20.jpg" alt="hoan-tien-20" />
+                                <p>Mua vé phim BHD Star - Nhận ngay Hoàn Tiền 20%</p>
+                            </a>
+                            <p>
+                                Mua vé BHD Star thả ga, nhận ngay hoàn tiền xả láng 20% khi thanh toán qua ZaloPay.
+                            </p>
+                            <div class="item__icon">
+                                <div class="like">
+                                    <img src="img/like.png" alt="like" />
+                                    <span>0</span>
+                                </div>
+                                <div class="comment">
+                                    <a href="">
+                                        <img src="img/comment.png" alt="comment" />
+                                        <span>0</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                    <div class="review">
+                        <div class="review__item">
+                            <a href="">
+                                <img src="img/mua-2-tinh-tien-1.png" alt="mua-2-tinh-tien-1" />
+                                <p>Chào bạn mới - BHD Star Mua 2 Tính Tiền 1</p>
+                            </a>
+                            <p>
+                                Ưu đãi cực chất: Mua 2 vé BHD Star chỉ cần trả tiền 1 vé khi thanh toán qua ZaloPay.
+                            </p>
+                            <div class="item__icon">
+                                <div class="like">
+                                    <img src="img/like.png" alt="like" />
+                                    <span>0</span>
+                                </div>
+                                <div class="comment">
+                                    <a href="">
+                                        <img src="img/comment.png" alt="comment" />
+                                        <span>0</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="review__item">
+                            <a href="">
+                                <img src="img/mua-1-tang-1.jpg" alt="mua-1-tang-1" />
+                                <p>Vui Tết cùng ZaloPay - CGV Mua 1 Tặng 1</p>
+                            </a>
+                            <p>
+                                Ưu đãi mua 1 tặng 1 vé xem phim tại CGV cho khách hàng mới khi thanh toán bằng ZaloPay.
+                            </p>
+                            <div class="item__icon">
+                                <div class="like">
+                                    <img src="img/like.png" alt="like" />
+                                    <span>0</span>
+                                </div>
+                                <div class="comment">
+                                    <a href="">
+                                        <img src="img/comment.png" alt="comment" />
+                                        <span>0</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="review__itemEnd">
+                            <div class="endItem">
+                                <a class="imgReview" href="">
+                                    <img src="img/nav2.jpg" alt="cigarettes" />
+                                </a>
+                                <a href="">
+                                    <p class="introReview">
+                                        Cigarettes After Sex chợt thoáng xuất hiện trong trailer phim tâm lý Promising Young Woman
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="clear"></div>
+                            <div class="endItem">
+                                <a class="imgReview" href="">
+                                    <img src="img/nav3.jpg" alt="cigarettes" />
+                                </a>
+                                <a href="">
+                                    <p class="introReview">
+                                        Cigarettes After Sex chợt thoáng xuất hiện trong trailer phim tâm lý Promising Young Woman
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="clear"></div>
+                            <div class="endItem">
+                                <a class="imgReview" href="">
+                                    <img src="img/nav3.jpg" alt="cigarettes" />
+                                </a>
+                                <a href="">
+                                    <p class="introReview">
+                                        Cigarettes After Sex chợt thoáng xuất hiện trong trailer phim tâm lý Promising Young Woman
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="clear"></div>
+                            <div class="endItem">
+                                <a class="imgReview" href="">
+                                    <img src="img/nav4.jpg" alt="cigarettes" />
+                                </a>
+                                <a href="">
+                                    <p class="introReview">
+                                        Cigarettes After Sex chợt thoáng xuất hiện trong trailer phim tâm lý Promising Young Woman
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                    <div class="newsButton d-flex justify-content-center">
+                        <button class="btn btn--white">Xem thêm</button>
+                    </div>
+                </div>
+                </div>
+                </div>
+            </section>
+            <!-- appMobile -->
+            <section class="appMobile" id="appMobile">
+                <div class="row appMobile__content">
+                    <div class="appMobile-left col-lg-6 col-sm-12">
+                        <p>Ứng dụng tiện lợi dành cho</p>
+                        <p>người yêu điện ảnh</p>
+                        <p>
+                            Không chỉ đặt vé, bạn còn có thể bình luận phim, chấm điểm rạp và đổi quà hấp dẫn.
+                        </p>
+                        <button class="btn btn-warning btnAppMobile">
+            App miễn phí - Tải về ngay!
+          </button>
+                        <p>
+                            TIX có hai phiên bản
+                            <a href="">iOS</a> &
+                            <a href="">Android</a>
+                        </p>
+                    </div>
+                    <div class="appMobile-right col-lg-6 col-sm-12">
+                        <div id="carouselAppMobile" class="carousel slide carouselMobile" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carouselAppMobile" data-slide-to="0" class="active"></li>
+                                <li data-target="#carouselAppMobile" data-slide-to="1"></li>
+                                <li data-target="#carouselAppMobile" data-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="img/appMovie/slide1.jpg" alt="slide1" />
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/appMovie/slide2.jpg" alt="slide2" />
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/appMovie/slide3.jpg" alt="slide3" />
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/appMovie/slide4.jpg" alt="slide4" />
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/appMovie/slide5.jpg" alt="slide5" />
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/appMovie/slide6.jpg" alt="slide6" />
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/appMovie/slide7.jpg" alt="slide7" />
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/appMovie/slide8.jpg" alt="slide8" />
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/appMovie/slide9.jpg" alt="slide9" />
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/appMovie/slide10.jpg" alt="slide10" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mobilePhone">
+                            <img src="img/appMovie/mobile.png" alt="mobile" />
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- footer -->
+            <footer class="footer">
+                <div class="footer__content">
+                    <div class="row footer-top">
+                        <div class="col-lg-4 col-sm-6 top-left">
+                            <p>TIX</p>
+                            <div class="row">
+                                <div class="col-lg-6 left-item">
+                                    <a href="">FAQ</a>
+                                    <a href="">Brand Guidelines</a>
+                                </div>
+                                <div class="col-lg-6 left-item">
+                                    <a href="">Thỏa thuận sử dụng</a>
+                                    <a href="">Chính sách bảo mật</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 top-center">
+                            <p>ĐỐI TÁC</p>
+                            <div class="companyItem">
+                                <a href=""><img src="img/cgv.png" alt="cgv" /></a>
+                                <a href=""><img src="img/bhd.png" alt="bhd" /></a>
+                                <a href=""><img src="img/galaxycine.png" alt="galaxycine" /></a>
+                                <a href=""><img src="img/cinestar.png" alt="cinestar" /></a>
+                                <a href=""><img src="img/lottecinema.png" alt="lottecinema" /></a>
+                            </div>
+                            <div class="companyItem">
+                                <a href=""><img src="img/megags.png" alt="megags" /></a>
+                                <a href=""><img src="img/beta.jpg" alt="beta" /></a>
+                                <a href=""><img src="img/dongdacinema.png" alt="dongdacinema" /></a>
+                                <a href=""><img src="img/TOUCH.png" alt="touch" /></a>
+                                <a href=""><img src="img/cinemax.jpg" alt="cinemax" /></a>
+                            </div>
+                            <div class="companyItem">
+                                <a href=""><img src="img/STARLIGHT.png" alt="starlight" /></a>
+                                <a href=""><img src="img/dcine.png" alt="dcine" /></a>
+                                <a href=""><img src="img/zalopay_icon.png" alt="zalopay_icon" /></a>
+                                <a href=""><img src="img/payoo.jpg" alt="payoo" /></a>
+                                <a href=""><img src="img/VIETTINBANK.png" alt="viettinbank" /></a>
+                            </div>
+                            <div class="companyItem">
+                                <a href=""><img src="img/AGRIBANK.png" alt="agribank" /></a>
+                                <a href=""><img src="img/VIETTINBANK.png" alt="viettinbank" /></a>
+                                <a href=""><img src="img/IVB.png" alt="ivb" /></a>
+                                <a href=""><img src="img/123go.png" alt="123go" /></a>
+                                <a href=""><img src="img/laban.png" alt="laban" /></a>
+                            </div>
+                        </div>
+                        <div class="row col-lg-4 col-sm-6 top-right">
+                            <div class="col-lg-6 right-item">
+                                <p>MOBILE APP</p>
+                                <a title="Apple App" href=""><img src="img/apple-logo.png" alt="apple-logo" /></a>
+                                <a title="Android App" href=""><img src="img/android-logo.png" alt="android-logo" /></a>
+                            </div>
+                            <div class="col-lg-6 right-item">
+                                <p>SOCIAL</p>
+                                <a title="Facebook social" href=""><img src="img/facebook-logo.png" alt="facebook-logo" /></a>
+                                <a title="Zalo social" href=""><img src="img/zalo-logo.png" alt="zalo-logo" /></a>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="footer-hr" />
+                    <div class="row footer-bottom">
+                        <div class="col-lg-1 col-md-1 col-sm-12 bottom-left">
+                            <img src="img/zion-logo.jpg" alt="zion-logo" />
+                        </div>
+                        <div class="col-lg-9 col-md-9 col-sm-12 bottom-center">
+                            <p>TIX – SẢN PHẨM CỦA CÔNG TY CỔ PHẦN ZION</p>
+                            <p>
+                                Địa chỉ: Z06 Đường số 13, Phường Tân Thuận Đông, Quận 7, Tp. Hồ Chí Minh, Việt Nam.
+                            </p>
+                            <p>
+                                Giấy chứng nhận đăng ký kinh doanh số: 0101659783, <br /> đăng ký thay đổi lần thứ 30, ngày 22 tháng 01 năm 2020 do Sở kế hoạch và đầu tư Thành phố Hồ Chí Minh cấp.
+                            </p>
+                            <p>Số Điện Thoại (Hotline): 1900 545 436</p>
+                            <p>
+                                Email: <a href="mailto:vantaibui92@gmail.com">support@tix.vn</a>
+                            </p>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-12 bottom-right">
+                            <a href="#" target="_blank"><img src="img/notification.png" alt="notification" /></a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+
+            <!-- backToTop -->
+            <a href="#" class="to-top cd-top text-replace js-cd-top"><i class="fa fa-angle-up"></i
+    ></a>
+
+            <!-- Modal -->
+            <div class="modal fade" id="trailerMovie" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true"><img src="img/close.png" alt="" /></span>
+          </button>
+                        <iframe src="https://www.youtube.com/embed/OGfm7CNM5BY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+            <!-- bootstrap 4 -->
+            <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+            <!-- Modal js -->
+            <script>
+                $("#myModal").on("shown.bs.modal", function() {
+                    $("#myInput").trigger("focus");
+                });
+                $(".carouselMobile").carousel({
+                    interval: 1000,
+                });
+            </script>
+            <!-- owl carousel -->
+            <script src="js/owl.carousel.min.js"></script>
+            <script>
+                $(".owl-carousel").owlCarousel({
+                    loop: true,
+                    margin: 10,
+                    nav: true,
+                    dots: false,
+                    responsive: {
+                        0: {
+                            items: 1,
+                        },
+                        600: {
+                            items: 1,
+                        },
+                        1000: {
+                            items: 1,
+                        },
+                    },
+                });
+            </script>
+            <!-- slick slider -->
+            <script src="js/slick.min.js"></script>
+            <script>
+                $(document).ready(function() {
+                    $(".slickAppPhone").slick({
+                        autoplay: true,
+                        autoplaySpeed: 1000,
+                    });
+                });
+            </script>
+            <!-- movie theater -->
+            <script>
+                $(document).on("click", "div", function() {
+                    $(this).addClass("active").siblings().removeClass("active");
+                });
+            </script>
+            <!-- Smooth scroll  -->
+            <!-- <script src="js/navbar-fixed.js"></script> -->
+            <!-- back to top -->
+            <script src="js/util.js"></script>
+            <script src="js/main.js"></script>
+
+            <!-- oh no :)) sao chay dc ta :)) -->
+</body>
+
+</html>

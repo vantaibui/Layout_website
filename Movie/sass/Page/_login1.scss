@@ -1,0 +1,88 @@
+.login {
+    .login__background {
+        background-image: url(../img/background.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top center;
+        width: 100%;
+        height: 722px;
+        margin: auto;
+        position: relative;
+        .login__content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            text-align: center;
+            transform: translate(-50%, -50%);
+            padding: ($pd-3 * 2) ($pd-4 + 7) ($pd-4 + 5);
+            max-width: 360px;
+            vertical-align: middle;
+            background: linear-gradient(to bottom, rgba(20, 50, 93, .9), rgba(8, 22, 48, .9));
+            box-shadow: 0 0 10px 0 rgba(0, 0, 0, .45);
+            .login-title {
+                img {
+                    width: 209px;
+                    margin-bottom: ($mg-9 * 3) - 9;
+                    vertical-align: middle;
+                    cursor: pointer;
+                }
+                p {
+                    text-align: center;
+                    @include text($color-white-0, $fs-0, $fw-normal);
+                }
+            }
+            .login-account {
+                text-align: center;
+                a {
+                    display: flex;
+                    flex-direction: column;
+                    margin-top: $mg-3;
+                    padding: 0 $pd-1;
+                    cursor: pointer;
+                    img {
+                        width: 100%;
+                        &:focus {
+                            outline: none;
+                        }
+                    }
+                }
+            }
+            .close {
+                position: absolute;
+                top: -4%;
+                right: -5%;
+                width: 36px;
+                height: 36px;
+                line-height: 1.2;
+                font-size: $fs-5 * 1.5;
+                border-radius: 50%;
+                background-color: $color-blue-0;
+                box-shadow: 0 2px 10px 0 rgba(0, 0, 0, .5);
+                a {
+                    text-decoration: none;
+                    color: $color-blue-2;
+                }
+            }
+        }
+    }
+}
+
+@include mediaQueryMax(getBreakponit('small')) {
+    .login {
+        .login__background {
+            width: 100%;
+            height: auto;
+            .login__content {
+                max-width: none;
+                width: 100%;
+                height: 100%;
+                .close {
+                    top: 1.5%;
+                    right: 2.5%;
+                    padding: 3px 6px;
+                    font-size: $fs-5;
+                }
+            }
+        }
+    }
+}

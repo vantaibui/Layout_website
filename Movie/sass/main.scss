@@ -1,0 +1,33 @@
+// Helpers
+@import "./Helpers/variable";
+@import "./Helpers/function";
+@import "./Helpers/mixin";
+@import "./Helpers/extend";
+// Base
+@import "./Base/reset";
+@import "./Base/normalized";
+@import "./Component/button";
+// Layout
+@import "./Layout/header";
+@import "./Layout/footer";
+// Component
+@import "./Component/button";
+@import "./Component/span";
+// Page
+@import "./Page/carousel";
+@import "./Page/buyTicket";
+@import "./Page/showTimes";
+@import "./Page/movieTheater";
+@import "./Page/news";
+@import "./Page/appMobile";
+@import "./Page/introduceMovie";
+@import "./Page/informationMovie";
+@import "./Page/headerBooking";
+@import "./Page/seatCheckOut";
+@import "./Page/checkOut";
+@import "./Page/login";
+// @import "./Page/login1";
+// @import "./Page/login2";
+@import "./Page/register";
+@import "Page//adminPage";
+@import "Page/admin";
